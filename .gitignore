@@ -1,0 +1,5 @@
+server
+server-linux
+client
+!cmd/server
+!cmd/client

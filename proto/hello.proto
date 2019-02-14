@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package grpc;
+option go_package = "proto";
+
+message Empty{}
+
+message HelloResponse{
+  string Message = 1;
+}
+
+service Hello {
+  rpc Say(Empty) returns (HelloResponse) {}
+}
